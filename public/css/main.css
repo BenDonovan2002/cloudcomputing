@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#PageContent {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    min-height: 600px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+#MessageContainer {
+    margin-bottom: 5px;
+    flex-grow: 1;
+    overflow: scroll;
+}
+
+#PageContent input {
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin: auto 10px 10px 10px;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.64); 
+    box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.64);
+}
+
+#PageContent input:focus {
+    border: none;
+}
+
+.MessageBox {
+    max-width: 100%;
+    height: 90px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    overflow: hidden;
+}
